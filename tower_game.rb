@@ -128,7 +128,8 @@ end
     
 
 puts("Welcome to the Towers of Hanoi game.")
-puts("First, how many discs would you like to start out with?")
+puts("You will have 3 towers. You start with a number of disks all on the first tower and you will need to replicate this structure on another tower, subject to certain rules.")
+puts("First, how many discs would you like to start out with? If it is your first time playing, maybe start with a small number of disks (but greater than 2!)")
 
 disks=gets.chomp.to_i
 tow=Towers.new(disks) #initialize instance of Towers class
@@ -149,7 +150,7 @@ puts("Rule #3: no disk may be placed on top of a smaller disk.")
 puts()
 # initialize winning_tower to tower_1  
 winning_tower=tow.tower_1
-puts("This is what the winning tower should look like: #{winning_tower}")
+puts("This is what the winning tower should look like: #{winning_tower}. Note the disks are in decreasing order of size.")
 puts()
 puts("Let's get started!")
 
