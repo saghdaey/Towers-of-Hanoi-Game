@@ -135,7 +135,7 @@ disks=gets.chomp.to_i
 tow=Towers.new(disks) #initialize instance of Towers class
 # winning_tower is what we would like the player to reproduce
 
-puts("Thank you for your entry. Let me describe the game.")
+puts("Thank you for your entry. Let me describe the game in more detail.")
 puts()
 puts("The #{disks} disks are arranged on the first tower by decreasing size.In other words: the largest disk is on the bottom and the smallest on top.")
 puts("You are asked to move all of the #{disks} disks from the first tower to another, subject to certain rules.")
@@ -152,6 +152,7 @@ puts()
 winning_tower=tow.tower_1
 puts("This is what the winning tower should look like: #{winning_tower}. Note the disks are in decreasing order of size.")
 puts()
+puts("By the way, if at any point you'd like to quit the game because you are lame and give up, type command c to quit terminal.")
 puts("Let's get started!")
 
 
