@@ -69,7 +69,7 @@ class Towers
                 end
             end
             if destination == 3 
-                if @@tower_3.empty? || @@tower_2.last < @@tower_1.last
+                if @@tower_3.empty? || @@tower_2.last < @@tower_3.last
                     return true
                 end
             end
@@ -80,7 +80,7 @@ class Towers
                 return false
             end
             if destination == 1 
-                if @@tower_1.empty? || @@tower_2.last < @@tower_1.last
+                if @@tower_1.empty? || @@tower_3.last < @@tower_1.last
                     return true
                 end
             end
